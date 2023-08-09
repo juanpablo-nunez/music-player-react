@@ -1,0 +1,49 @@
+.aside-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80vh;
+  overflow: auto;
+  border-right: 1px solid #b3b3b3;
+  font-size: 35px;
+  padding-left: 5px;
+  .p1 {
+    padding: 15px;
+    font-weight: bolder;
+    user-select: none;
+    text-align: left;
+    color: #b3b3b3;
+  }
+  .lib-sub {
+    padding: 10px;
+    margin: 5px 0px 0px 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+    border-radius: 5px 0 0 5px;
+    .MuiButton-startIcon {
+      color: #000;
+    }
+  }
+  .lib-sub:hover{
+    border-right: 3px solid #2578f4;
+    color: #2578f4;
+    .MuiButton-startIcon {
+      color: #2578f4;
+    }
+  }
+  .aside-bar-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    background-color: #f6f6f8;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .aside-bar {
+    display: none;
+  }
+}
